@@ -1,0 +1,1012 @@
+@font-face {
+  font-family: 'FantasqueSansMonoBold';
+  src: url(../webfonts/FantasqueSansMonoBold.html); /* IE 9 Compatibility Mode */
+  src: url(../webfonts/FantasqueSansMonoBold.ttf) format('truetype'); /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FantasqueSansMonoRegular';
+  src: url(../webfonts/FantasqueSansMonoBold.html); /* IE 9 Compatibility Mode */
+  src: url(../webfonts/FantasqueSansMonoRegular.ttf) format('truetype'); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'BigBlueTerm';
+    src: url(../webfonts/bigblue_term.eot);
+    src: url(../webfonts/bigblue_termd41d.eot?#iefix) format('embedded-opentype'),
+         url(../webfonts/bigblue_term.woff2) format('woff2'),
+         url(../webfonts/bigblue_term.woff) format('woff'),
+         url(../webfonts/bigblue_term.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'IBMbios2Y';
+  src: url(../webfonts/ibm_bios-2y22af.eot?new);
+  src: url(../webfonts/ibm_bios-2yd41d.eot?#iefix) format('embedded-opentype'),
+       url(../webfonts/ibm_bios-2y22af.woff2?new) format('woff2'),
+       url(../webfonts/ibm_bios-2y22af.woff?new) format('woff'),
+       url(../webfonts/ibm_bios-2y22af.ttf?new) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBMVGA8';
+  src: url(../webfonts/ibm_vga8.eot);
+  src: url(../webfonts/ibm_vga8d41d.eot?#iefix) format('embedded-opentype'),
+       url(../webfonts/ibm_vga8.woff2) format('woff2'),
+       url(../webfonts/ibm_vga8.woff) format('woff'),
+       url(../webfonts/ibm_vga8.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VGAsquarePx';
+  src: url(../webfonts/vga_squarepx.eot);
+  src: url(../webfonts/vga_squarepxd41d.eot?#iefix) format('embedded-opentype'),
+       url(../webfonts/vga_squarepx.woff2) format('woff2'),
+       url(../webfonts/vga_squarepx.woff) format('woff'),
+       url(../webfonts/vga_squarepx.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ATI8x16';
+  src: url(../webfonts/ati_8x16.eot);
+  src: url(../webfonts/ati_8x16d41d.eot?#iefix) format('embedded-opentype'),
+       url(../webfonts/ati_8x16.woff2) format('woff2'),
+       url(../webfonts/ati_8x16.woff) format('woff'),
+       url(../webfonts/ati_8x16.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Amstrad2Y';
+  src: url(../webfonts/amstradpc1512-2y.eot);
+  src: url(../webfonts/amstradpc1512-2yd41d.eot?#iefix) format('embedded-opentype'),
+       url(../webfonts/amstradpc1512-2y.woff2) format('woff2'),
+       url(../webfonts/amstradpc1512-2y.woff) format('woff'),
+       url(../webfonts/amstradpc1512-2y.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+	text-align:center;
+	background-color:black;
+	line-height:100%;
+	color:#aaa;
+}
+body.mainsite {
+	font-family:BigBlueTerm, monospace;
+	font-size:12px;
+	overflow:hidden;
+}
+body.xform {
+  overflow-y:scroll;
+  margin:0;
+}
+#menu {
+	color:#0aa;
+	background-color:#333;
+	padding: 6px 0;
+}
+#menuleft {
+	float:left;
+	text-align:left;
+	letter-spacing:8px;
+}
+#menuright {
+	float:right;
+	text-align:right;
+}
+#menuleft, #menuright {padding:6px 12px; width:160px}
+#menu ul {
+	margin: 0; padding: 0;
+	display:inline-block;
+}
+#menu ul li {
+	display:inline-block;
+	list-style-type: none;
+	margin: 0; padding: 0;
+}
+#menu ul li a, #menu ul li a:link, #menu ul li a:visited {
+	display:block;
+	text-decoration: none;
+	color:#aaa;
+	padding: 6px 8px;
+	margin: 0 4px;
+}
+#menu ul li a:active, #menu ul li a:hover{
+	color:#5ff;
+	background-color: #555;
+}
+#menu ul li a:focus {
+	color:#5f5;
+	background-color:#555;
+	outline:none;
+}
+
+#menu ul li a:before {content:"["}
+#menu ul li a:after {content:"]"}
+#menu ul li a:before, #menu ul li a:after {color: #555;}
+#menu ul li a:active:before, #menu ul li a:hover:before {color:#0aa}
+#menu ul li a:active:after, #menu ul li a:hover:after {color:#0aa}
+#menu ul li a:focus:before, #menu ul li a:focus:after {color:#0a0}
+
+#msgarea {
+	color:#a00;
+	padding-top:12px;
+}
+.obfdom {
+	unicode-bidi:bidi-override;
+	direction:rtl;
+}
+.obfdom:after {
+	content:"\0040";
+}
+
+/*logo anim*/
+@keyframes whirl {
+	from {transform: rotate(0deg) translate(-50px) rotate(0deg);}
+	to {transform: rotate(360deg) translate(-50px) rotate(-360deg);}
+}
+#movinglogo {
+	width:582px; height:168px;
+	position: relative ;
+	top:70px;
+	left: 0;
+	margin: auto;
+	animation: whirl 2.2s infinite linear;
+	z-index:100;
+}
+#logohome{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	height:300px;
+}
+/*background*/
+@-webkit-keyframes whizz {50% {background-position: 555px 0;}}
+@-moz-keyframes whizz    {50% {background-position: 555px 0;}}
+@-o-keyframes whizz      {50% {background-position: 555px 0;}}
+@keyframes whizz         {50% {background-position: 555px 0;}}
+body.mainsite {
+	background: black url(../images/logo_checkers.png) repeat scroll 0 0;
+	-webkit-animation: whizz 3.5s infinite ease-in-out forwards;
+	-moz-animation: whizz 3.5s infinite ease-in-out forwards;
+	-o-animation: whizz 3.5s infinite ease-in-out forwards;
+	animation: whizz 3.5s infinite ease-in-out forwards;
+}
+/*rasterbars*/
+@-webkit-keyframes sine {50% { top: 120px; }}
+@-moz-keyframes sine    {50% { top: 120px; }}
+@-o-keyframes sine      {50% { top: 120px; }}
+@keyframes sine         {50% { top: 120px; }}
+@-webkit-keyframes opa  {0% { opacity: 0; } 3% { opacity: 1; } 33% { opacity: 1; } 36% { opacity: 0; } 100%  { opacity: 0; }}
+@-moz-keyframes opa     {0% { opacity: 0; } 3% { opacity: 1; } 33% { opacity: 1; } 36% { opacity: 0; } 100%  { opacity: 0; }}
+@-o-keyframes opa       {0% { opacity: 0; } 3% { opacity: 1; } 33% { opacity: 1; } 36% { opacity: 0; } 100%  { opacity: 0; }}
+@keyframes opa          {0% { opacity: 0; } 3% { opacity: 1; } 33% { opacity: 1; } 36% { opacity: 0; } 100%  { opacity: 0; }}
+.rasterbar {
+  height: 40px;
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin-top:70px;
+  -webkit-animation: sine 2s infinite ease-in-out forwards;
+  -moz-animation: sine 2s infinite ease-in-out forwards;
+  -o-animation: sine 2s infinite ease-in-out forwards;
+  animation: sine 2s infinite ease-in-out forwards;
+}
+#bar1 {
+	z-index:70;
+}
+#bar2 {
+	-webkit-animation-delay:0.1s;
+	-moz-animation-delay:0.1s;
+	-o-animation-delay:0.1s;
+	animation-delay:0.1s;
+	z-index:60;
+}
+#bar3 {
+	-webkit-animation-delay:0.2s;
+	-moz-animation-delay:0.2s;
+	-o-animation-delay:0.2s;
+	animation-delay:0.2s;
+	z-index:50;
+}
+#bar4 {
+	-webkit-animation-delay:0.3s;
+	-moz-animation-delay:0.3s;
+	-o-animation-delay:0.3s;
+	animation-delay:0.3s;
+	z-index:40;
+}
+#bar5 {
+	-webkit-animation-delay:0.4s;
+	-moz-animation-delay:0.4s;
+	-o-animation-delay:0.4s;
+	animation-delay:0.4s;
+	z-index:30;
+}
+#bar6 {
+	-webkit-animation-delay:0.5s;
+	-moz-animation-delay:0.5s;
+	-o-animation-delay:0.5s;
+	animation-delay:0.5s;
+	z-index:20;
+}
+#bar7 {
+	-webkit-animation-delay:0.6s;
+	-moz-animation-delay:0.6s;
+	-o-animation-delay:0.6s;
+	animation-delay:0.6s;
+	z-index:10;
+}
+.rasterbar * {
+	height: 40px;
+	position:relative;
+	margin-bottom: -40px;
+  -webkit-animation: opa 12s infinite linear forwards;
+  -moz-animation: opa 12s infinite linear forwards;
+  -o-animation: opa 12s infinite linear forwards;
+  animation: opa 12s infinite linear forwards;
+}
+.grd-orange {
+	background:linear-gradient(to bottom,#190000 0%, #680000 30%,#902200 50%, #680000 70%, #190000 100%);
+	-webkit-animation-delay:-1s;
+	-moz-animation-delay:-1s;
+	-o-animation-delay:-1s;
+	animation-delay:-1s;
+}			
+.grd-purple {
+	background:linear-gradient(to bottom,#080520 0%, #2f1485 30%,#591495 50%, #2f1485 70%, #080520 100%);
+	-webkit-animation-delay:-9s;
+	-moz-animation-delay:-9s;
+	-o-animation-delay:-9s;
+	animation-delay:-9s;
+}
+.grd-green {
+	background:linear-gradient(to bottom,#001208 0%, #005021 30%,#00726A 50%, #005021 70%, #001208 100%);
+	-webkit-animation-delay:-5s;
+	-moz-animation-delay:-5s;
+	-o-animation-delay:-5s;
+	animation-delay:-5s;
+}
+
+/*fonts pages menu*/
+
+#fontsmenu {
+	height:3em; /* resize according to header height */
+	color:#aaa;
+	background-color:/*#1b1b1b*/ #323232;
+	padding: 0;
+	width:100%;
+	position: fixed;
+	z-index:3;
+	top:0;
+	left:0;
+	margin:/*-6em 0 0*/ 0; /* resize according to header height */
+	text-align:left;
+	border-bottom:2px solid #000;
+	box-sizing:content-box;
+}
+#fontsmenu:before, #fontsmenu:after {
+	position:absolute;
+	z-index:-1;
+	width:100%;
+	display:block;
+	background-color:#1c1c1c;
+	content:"";
+}
+#fontsmenu:before {
+	top:0; left:0;
+	height:7px;
+}
+#fontsmenu:after {
+	bottom:0; left:0;
+	height:9px;
+}
+#fontsmenu h1 {
+	font-size:1em;
+	font-weight:normal;
+	padding:0;
+	margin:0 2ch;
+	color:#ff5;
+	display: inline;
+}
+#fontsmenu h1:after {
+	content:":";
+}
+
+/*font selection*/
+
+#fontsmenuright {
+	position:absolute;
+	right:0;
+	top:0;
+	text-align:center;
+	padding:0;
+	margin: 0 2ch 0 0;
+	background-color:#0F1D35;
+}
+#fontsmenuright a, #fontsmenuright a.on {text-decoration:none; color:#df5400}
+#fontsmenuright a.on:active, #fontsmenuright a.on:hover, #fontsmenuright #row2 a.on:focus {color:#ff9200; background-color:#41608f; outline:none;}
+#fontsmenuright a.on.selectactive, #fontsmenuright a.on.selectactive:focus {color: #ff9200 !important; background-color:#5a81ba !important;}
+#fontsmenuright a.off {color:#000}
+a#togglefonts.on {color:#0f0; background-color:#040;}
+a#togglefonts.off {color:#f00; background-color:#400;}
+a#togglefonts.on:hover {color:#0f0; background-color:#080;}
+a#togglefonts.off:hover {color:#f00; background-color:#800;}
+
+#fontsmenuright #row1 > span:before {
+	content:"\a0\2552\2550\a0";
+	color: #a00;
+}
+#fontsmenuright #row1 > span:after {
+	content:"\a0\2550\2555\a0";
+	color: #a00;
+}
+#fontsmenuright #row2 > span:before {
+	content:"\a0\2502";
+	color: #a00;
+}
+#fontsmenuright #row2 > span:after {
+	content:"\2502\a0";
+	color: #a00;
+}
+#currentfont > span {color: #0aa}
+#currentfont > span:before, #currentfont > span:after {color: #a00}
+#currentfont > span:before {content:"\a0\2558\2550\2550\2550\2550\a0"}
+#currentfont > span:after  {content:"\a0\2550\2550\2550\2550\255b\a0"}
+
+#fontsmenuright #row1:before, #fontsmenuright #row1:after,
+#currentfont:before, #currentfont:after {
+	color:#0a0;
+	content:"\2502"
+}
+#fontsmenuright #row2:before, #fontsmenuright #row2:after {
+	color:#5f5;
+	content:"\2502"
+}
+
+/*fonts navigation*/
+
+#fontsmenu ul {
+	margin: 0 1px 0 0; padding: 0;
+	display:inline-block;
+}
+#fontsmenu ul li {
+	display:inline-block;
+	list-style-type: none;
+	margin: 0; padding: 0;
+}
+#fontsmenu ul li a, #fontsmenu ul li a:link, #fontsmenu ul li a:visited {
+	display:block;
+	text-decoration: none;
+	color:#5ff;
+	padding:0 8px;
+	margin: 7px 4px 9px 4px;
+}
+#fontsmenu ul li a span {
+	display:inline-block;
+	padding: 9px 0 7px 0;
+}
+#fontsmenu ul li a:active, #fontsmenu ul li a:hover, #fontsmenu ul li a:focus{
+	color:#ff5;
+	background-color:#800;
+	outline:none;
+}
+#fontsmenu ul li a span:before {content:"["}
+#fontsmenu ul li a span:after {content:"]"}
+#fontsmenu ul li a span:before, #fontsmenu ul li a span:after {color: #0aa;}
+#fontsmenu ul li a:active  span:before, #fontsmenu ul li a:hover span:before, #fontsmenu ul li a:active span:after, #fontsmenu ul li a:hover span:after, #fontsmenu ul li a:focus span:before, #fontsmenu ul li a:focus span:after {
+	color:#a50;
+}
+a.thispage, a.thispage:hover{
+	background-color:transparent !important;
+	margin: 7px 4.3px 8px 3.7px !important;
+}
+a.thispage span, a.thispage:hover span{
+	color:#f55 !important;
+}
+a.thispage span:before , a.thispage span:after {color:#a00 !important;}
+
+/*fonts content*/
+
+#content {
+	color:#999;
+	max-width:993px; /* !!961px!! */
+	margin:0 auto;
+	padding: 4em 0 0 0;  /* resize according to header height */
+}
+.nobidi {
+	unicode-bidi: bidi-override;
+}
+
+/*fonts jumpbox*/
+
+.jumpbox {
+	display:inline-block;
+	text-align: left;
+	color:#555;
+	background-color:#000;
+	margin-right:2ch;
+}
+.jumpbox .sec {
+	color:#c60;
+	padding:0 0 0 0.6px;
+	margin:0 0 1em -1px;
+}
+.jumpbox ul + .sec {
+	margin-top: 1em;
+}
+.jumpbox .sec:before, .jumpbox .sec:after {color:#a00;}
+.jumpbox .sec:before {content: "\2500[ "}
+.sec#s1:after {content: " ]\2500\2500\2500\2500\2500\2500\2500\2500\a0\2500\a0\B7"}
+.sec#s2:after {content: " ]\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\a0\2500\a0\B7"}
+.sec#s3:after {content: " ]\2500\2500\2500\2500\2500\2500\a0\2500\a0\B7"}
+.sec#s4:after {content: " ]\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\2500\a0\2500\a0\B7"}
+
+.jumpbox ul {padding:0; margin:0}
+.jumpbox ul li {padding:0 0 0 1ch; margin:0}
+.jumpbox ul {list-style-type: none;}
+.jumpbox ul li a:first-child:before {color:#0aa; content:"\BB\A0"}
+.jumpbox ul li a:first-child:hover:before, .jumpbox ul li a:first-child:active:before, .jumpbox ul li a:first-child:focus:before {color:#5ff; content:"\25BA\A0"}
+.jumpbox ul ul li {padding-left:4ch;}
+.jumpbox ul ul li a:first-child:before {color:#555; content:"\25cb\A0"}
+
+/*fonts boxes*/
+
+.fontbox {
+	display:block;
+	background-color:/*#0c0c0c*/ #000;
+	color:#555;
+	margin: 0 auto;
+	padding: 8px 3px;
+  -moz-transition: height 0.25s ease-out, color 0.3s, background-color 0.3s;
+  -o-transition: height 0.25s ease-out, color 0.3s, background-color 0.3s;
+  -webkit-transition: height 0.25s ease-out, color 0.3s, background-color 0.3s;
+  transition: height 0.25s ease-out, color 0.3s, background-color 0.3s;
+  background-position: 166px 10px;
+  background-repeat: no-repeat;
+  cursor:zoom-out;
+  border-bottom:3px double #444;
+  border-left:2px solid #444;
+  border-right:2px solid #444;
+  text-align:left;
+  line-height:20px;
+  overflow:hidden;
+}
+.fontbox div {
+	line-height:16px;
+}
+p.pw + .fontbox {
+	border-top:3px double #444;
+	margin-top:6px;
+}
+.fontbox.collapsed {
+	height:20px;
+	cursor:zoom-in;
+}
+.lessV {
+	background-position: 166px 5px;
+}
+.moreH {
+	background-position: 176px 10px;
+}
+.muchH {
+	background-position: 200px 10px;
+}
+.mostH {
+	background-position: 216px 10px;
+}
+
+.fontbox:hover {background-color:#0d1c2b; cursor:zoom-out; color:#aaa}
+.fontbox.collapsed:hover {background-color:#234; cursor:zoom-in;}
+
+.fonttitle {color:#0aa}
+.fontbox:hover .fonttitle {color:#ff5}
+.yep {color:#0a0;}
+.yep:before {color:#5f5; content:"+"}
+.fontbox:hover .yep {color:#5f5}
+.fontbox:hover .yep:before {color:#ff5}
+
+.fonttitle, .fonttitle:before, .yep, .yep:before {
+	-moz-transition: color 0.3s, background-color 0.3s;
+	-o-transition: color 0.3s, background-color 0.3s;
+	-webkit-transition: color, background-color 0.3s 0.3s;
+	transition: color 0.3s, background-color 0.3s;
+}
+.fonttitle:before {
+	color: #0aa;
+	background-color:/*#0c0c0c*/ #000;
+	content:"[-]";
+	position: relative;
+	float: right;
+	padding:4px;
+	margin: -4px -2px 0 0;
+}
+.fontbox.collapsed .fonttitle:before {
+	content:"[+]";
+}
+.fontbox:hover .fonttitle:before {
+	color: #ff5;
+	background-color:#0d1c2b;
+}
+.fontbox.collapsed:hover .fonttitle:before {
+	background-color:#234;
+}
+
+#ibm_cga {background-image: url(../images/font_ibm_cga8ab8.png?fix);}
+#ibm_cga-2y {background-image: url(../images/font_ibm_cga-2y8ab8.png?fix);}
+#ibm_cgathin {background-image: url(../images/font_ibm_cgathin.png);}
+#ibm_cgathin-2y {background-image: url(../images/font_ibm_cgathin-2y.png);}
+#ibm_mda {background-image: url(../images/font_ibm_mda.png);}
+#ibm_3270pc {background-image: url(../images/font_ibm_3270pc.png);}
+#ibm_conv {background-image: url(../images/font_ibm_conv.png);}
+#ibm_conv-2x {background-image: url(../images/font_ibm_conv-2x.png);}
+#ibm_conv-2y {background-image: url(../images/font_ibm_conv-2y.png);}
+#ibm_bios {background-image: url(../images/font_ibm_bios8ab8.png?fix);}
+#ibm_bios-2x {background-image: url(../images/font_ibm_bios-2x8ab8.png?fix);}
+#ibm_bios-2y {background-image: url(../images/font_ibm_bios-2y8ab8.png?fix);}
+#ibm_ega8 {background-image: url(../images/font_ibm_ega8.png);}
+#ibm_ega8-2x {background-image: url(../images/font_ibm_ega8-2x.png);}
+#ibm_ega9 {background-image: url(../images/font_ibm_ega9.png);}
+#ibm_ega9-2x {background-image: url(../images/font_ibm_ega9-2x.png);}
+#ibm_vga8 {background-image: url(../images/font_ibm_vga8.png);}
+#ibm_vga8-2x {background-image: url(../images/font_ibm_vga8-2x.png);}
+#ibm_vga9 {background-image: url(../images/font_ibm_vga9.png);}
+#ibm_vga9-2x {background-image: url(../images/font_ibm_vga9-2x.png);}
+#ibm_pgc {background-image: url(../images/font_ibm_pgc.png);}
+#ibm_pgc-2x {background-image: url(../images/font_ibm_pgc-2x.png);}
+#ibm_ps2thin1 {background-image: url(../images/font_ibm_ps2thin1.png);}
+#ibm_ps2thin2 {background-image: url(../images/font_ibm_ps2thin2.png);}
+#ibm_ps2thin3 {background-image: url(../images/font_ibm_ps2thin3.png);}
+#ibm_ps2thin4 {background-image: url(../images/font_ibm_ps2thin4.png);}
+#ibm_iso8 {background-image: url(../images/font_ibm_iso8.png);}
+#ibm_iso9 {background-image: url(../images/font_ibm_iso9.png);}
+#bigblue_terminal {background-image: url(../images/font_bigblue_terminal.html);}
+#vga_squarepx {background-image: url(../images/font_vga_squarepx.png);}
+#amstrad_pc1512 {background-image: url(../images/font_amstrad_pc1512.png);}
+#amstrad_pc1512-2y {background-image: url(../images/font_amstrad_pc1512-2y.png);}
+#tandyold_tv {background-image: url(../images/font_tandyold_tv.png);}
+#tandyold_tv-2y {background-image: url(../images/font_tandyold_tv-2y.png);}
+#tandyold_225 {background-image: url(../images/font_tandyold_225.png);}
+#tandyold_225-2y {background-image: url(../images/font_tandyold_225-2y.png);}
+#tandynew_tv {background-image: url(../images/font_tandynew_tv.png);}
+#tandynew_tv-2y {background-image: url(../images/font_tandynew_tv-2y.png);}
+#tandynew_225 {background-image: url(../images/font_tandynew_225.png);}
+#tandynew_225-2y {background-image: url(../images/font_tandynew_225-2y.png);}
+#tandynew_mono {background-image: url(../images/font_tandynew_mono.png);}
+#ami_bios {background-image: url(../images/font_ami_bios.png);}
+#ami_bios-2y {background-image: url(../images/font_ami_bios-2y.png);}
+#atandt_pc6300 {background-image: url(../images/font_atandt_pc6300.png);}
+#atandt_pc6300-2x {background-image: url(../images/font_atandt_pc6300-2x.png);}
+#dtk_bios {background-image: url(../images/font_dtk_bios.png);}
+#dtk_bios-2y {background-image: url(../images/font_dtk_bios-2y.png);}
+#itt_bios {background-image: url(../images/font_itt_bios8ab8.png?fix);}
+#itt_bios-2y {background-image: url(../images/font_itt_bios-2y8ab8.png?fix);}
+#kaypro2k {background-image: url(../images/font_kaypro2k.png);}
+#kaypro2k-2y {background-image: url(../images/font_kaypro2k-2y.png);}
+#phoenix_bios {background-image: url(../images/font_phoenix_bios.png);}
+#phoenix_bios-2y {background-image: url(../images/font_phoenix_bios-2y.png);}
+#vtech_bios {background-image: url(../images/font_vtech_bios.png);}
+#vtech_bios-2y {background-image: url(../images/font_vtech_bios-2y.png);}
+#ati_8x8 {background-image: url(../images/font_ati_8x8.png);}
+#ati_8x8-2y {background-image: url(../images/font_ati_8x8-2y.png);}
+#ati_8x14 {background-image: url(../images/font_ati_8x14.png);}
+#ati_9x14 {background-image: url(../images/font_ati_9x14.png);}
+#ati_8x16 {background-image: url(../images/font_ati_8x16.png);}
+#ati_9x16 {background-image: url(../images/font_ati_9x16.png);}
+#ati_smallw_6x8 {background-image: url(../images/font_ati_smallw_6x8.png);}
+#phoenixega_8x8 {background-image: url(../images/font_phoenixega_8x8.png);}
+#phoenixega_8x8-2y {background-image: url(../images/font_phoenixega_8x8-2y.png);}
+#phoenixega_8x14 {background-image: url(../images/font_phoenixega_8x14.png);}
+#phoenixega_9x14 {background-image: url(../images/font_phoenixega_9x14.png);}
+#phoenixega_8x16 {background-image: url(../images/font_phoenixega_8x16.png);}
+#verite_8x8 {background-image: url(../images/font_verite_8x8.png);}
+#verite_8x8-2y {background-image: url(../images/font_verite_8x8-2y.png);}
+#verite_8x14 {background-image: url(../images/font_verite_8x14.png);}
+#verite_9x14 {background-image: url(../images/font_verite_9x14.png);}
+#verite_8x16 {background-image: url(../images/font_verite_8x16.png);}
+#verite_9x16 {background-image: url(../images/font_verite_9x16.png);}
+#wyse700a {background-image: url(../images/font_wyse700a.png);}
+#wyse700a-2y {background-image: url(../images/font_wyse700a-2y.png);}
+#wyse700b {background-image: url(../images/font_wyse700b.png);}
+#wyse700b-2y {background-image: url(../images/font_wyse700b-2y.png);}
+#compaqthin_8x8 {background-image: url(../images/font_compaqthin_8x8.png);}
+#compaqthin_8x14 {background-image: url(../images/font_compaqthin_8x14.png);}
+#compaqthin_8x16 {background-image: url(../images/font_compaqthin_8x16.png);}
+#toshibalcd_8x8 {background-image: url(../images/font_toshibalcd_8x8.png);}
+#toshibalcd_8x16 {background-image: url(../images/font_toshibalcd_8x16.png);}
+
+/*font preview form*/
+#fontpreviewform {
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+fieldset {
+	border-width:0px;
+	padding:0;
+	margin:0;
+}
+fieldset + hr {
+	margin-top:8px;
+}
+legend {
+	color:#c60;
+	padding:0 1ch;
+	margin-left:0.7px;
+}
+label, input, select {
+	line-height:16px;
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: inline-block;
+	vertical-align: baseline !important;
+}
+textarea {
+	display:block;
+	line-height:16px !important;
+	margin:0;
+	height:56px;
+}
+form, input, textarea {	box-sizing: border-box; }
+input[type=text], select, textarea {
+	border-width:1px;
+	border-color:#555;
+	border-style:solid;
+	color:#c60;
+	background-color:#0c0c0c;
+}
+input[type=text]:focus, select:focus, textarea:focus {
+	color:#fff;
+	background-color:#0D1C2B;
+}
+select#fnt {
+	margin-right:3ch;
+}
+select#sm {
+	 width:7ch;
+}
+select#sm, select#sm option {
+	 padding-left:1ch;
+}
+input#txt {
+	width:68ch;
+}
+select::-moz-focus-inner, option::-moz-focus-inner, input::-moz-focus-inner { /*Remove button padding in FF*/ 
+  border: 0;
+  padding: 0;
+}
+option {
+	padding:0;margin:0 0.9px 0 0;
+	height: 16px;
+	min-height: 16px; /* webkit */
+	box-sizing:content-box;
+	line-height:16px !important;
+}
+input[type=submit] {
+	color:#000;
+	background-color:#0a0;
+	border-width:0;
+	padding:0 8px 0 8.5px;
+	text-transform:uppercase;
+	line-height:16px !important;
+	margin:0 auto 10px auto;
+	display:block;
+	box-shadow:1ch 8px 0 0 #000;
+}
+input[type=submit]:hover {
+	background-color:#5ff;
+	color:#555;
+	cursor:pointer;
+}
+/* sample pictures */
+a.samplepic {
+	display:inline-block;
+	padding: 1em 16.5px 1em 15.5px;
+	width:212px;
+	min-height:208px;
+	margin: 0 1ch 1.5em 1ch;
+	background-color:#2a2a2a;
+	text-align:left;
+	box-shadow:1ch 8px 0 0 #000;
+}
+a.samplepic:hover, a.samplepic:active, a.samplepic:focus {
+	outline:none;
+	background-color:#2B4056;
+	color:#ff5;
+}
+.samplepic img {
+	border-style:none;
+	height:112px;
+	max-width:180px;
+	margin:0 auto 1em auto;
+	display:block;
+}
+
+/*footer (FIXED)*/
+html {
+	height:100%;
+	box-sizing:border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* ! */
+}
+.fontbox, h1, .jumpbox {
+	box-sizing: content-box;
+}
+body.xform { 
+	position:relative;
+	padding-bottom:68px;
+	min-height:100%
+}
+#footer {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	text-align:center;
+	height: 48px;
+	width:100%;
+}
+a#getback, a#getback:link, a#getback:visited {
+	display:inline-block;
+	text-decoration:none;
+	color:#0a0;
+	padding: 0.5em 1ch;
+	margin: 0 3ch 0 0;
+}
+a#getback:active, a#getback:hover{
+	color:#5f5;
+	background-color: #333;
+}
+a#getback:focus {
+	color:#5ff;
+	background-color:#333;
+	outline:none;
+}
+a#getback:before {color: #a00; content:"\25C4\25C4\a0"}
+a#getback:active:before, a#getback:hover:before {color:#f55}
+a#getback:focus:before {color:#fff}
+
+/*tables*/
+table {
+	border-collapse:collapse;
+}
+th {
+	font-weight:normal;
+	color:#fff;
+}
+td {
+	padding:0 4px;
+}
+thead {
+	background-color:#222;
+	border-top: 1px solid #555;
+	border-bottom: 3px double #555;
+	border-left: 2px solid #555;
+	border-right: 2px solid #555;
+}
+tbody {
+	/*background-color:#0e0e0e;*/
+	border-left: 2px solid #555;
+	border-right: 2px solid #555;
+	border-bottom: 1px solid #555;
+}
+thead tr:first-child th, tbody tr:first-child td {
+	padding:7px 4px 0 4px;
+}
+thead tr:last-child th {
+	padding:0 4px 6px 4px;
+}
+tbody tr:last-child td {
+	padding:0 4px 8px 4px;
+}
+
+/*default font*/
+
+pre {
+	font-family:IBMVGA8, monospace;
+	font-size:16px;
+	line-height:16px;
+	margin:0; padding:0;
+	font-weight:normal;
+	text-align: left;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  text-indent: initial;
+}
+body.xform, input, select, textarea {
+	font-family:IBMVGA8, monospace;
+	font-size:16px;
+}
+
+#content a.anchor {
+	display: block;
+	position: relative;
+	top: -4em;
+	visibility: hidden;
+}
+
+/*misc formatting*/
+a, a:before, a:after, input, select, textarea {
+	-moz-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+	-o-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+	-webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+	transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+a:link {text-decoration:none;}
+a, a:link, a:visited {color:#0aa;}
+.gohome, .gohome:link, .gohome:visited {color:#5ff !important;}
+#content a:hover, #content a:active, strong a:hover, strong a:active, .padme a:hover, .padme a:active {color:#ff5 !important;}
+.gohome:hover, .gohome:active {color:#ff5 !important;}
+p {
+	margin:0;
+	padding:0;
+	text-align:left;
+	}
+.pw {
+	white-space: pre-wrap;
+}
+.ind {
+	margin-left:2ch;
+	margin-right:2ch;
+}
+.indsmall {
+	margin-right:1ch;
+	margin-left:1ch;
+}
+/*.padme *, .nopadme * {
+	vertical-align: top;
+}*/
+/* ^ CHANGED ^ */
+#content * {
+	vertical-align: top;
+}
+.padme {
+	padding: 1em 1.5ch;
+	background-color:	#1c1c1c;
+	text-align:left;
+}
+.nopadme {
+	text-align:left;
+}
+.padme .fontbox:last-child {
+	margin-bottom:0.5em;
+}
+.gohome {
+	text-align:right;
+	float:right;
+}
+.gohome:before {
+	color:#0aa;
+	content:"\25b2\a0"
+}
+.gohome:after {
+	color:#0aa;
+	content:"\a0\25b2"
+}
+.gohome:hover:before, .gohome:hover:after {
+	color:#a50 !important;
+}
+hr {
+	padding: 0;
+	margin: 7px 0 8px 0;
+	height:1px;
+	background-color: #333;
+	border-width:0;
+}
+h2, h3 {
+	font-size:100%;
+	font-weight:normal;
+	text-align:left;
+}
+h2 {
+	padding: 0 0 7px 0;
+	margin: 0 0 24px -0.3px;
+	color:#c60;
+	border-bottom: 1px solid #a00;
+}
+h3 {
+	margin: 0 0 1em -0.3px;
+	display:inline-block;
+	color:#b00;
+}
+h3.nbm {
+	margin-bottom:0;
+}
+strong {
+	font-weight:normal;
+	color: #fff;
+}
+strong a:link, strong a:visited {
+	color: #5ff;
+}
+	
+/*.padme p.pw strong {
+  color: #bbb;
+}*/
+.ilbl {
+	display:inline-block;
+}
+.grn {
+	color:#b00;
+	margin-left: -0.3px;
+	margin-right: 0.3px;
+}
+.bracketed:before {
+	content:"[";
+	color:#666;
+}
+.bracketed:after {
+	content:"]";
+	color:#666;
+}
+.centerme {
+	text-align:center;
+	padding-left:0.5px
+}
+.ma {
+	margin-left: auto;
+	margin-right: auto;
+}
+#content div:not(.jumpbox) > ul {
+	margin:0;
+	padding-left:2ch;
+	list-style-type:none;
+}
+#content div:not(.jumpbox) > ul ul {
+	margin:0;
+	padding-left:0ch;
+	list-style-type:none;
+}
+#content div:not(.jumpbox) > ul.ind {
+	margin-right:3ch;
+}
+#content div:not(.jumpbox) > ul li {
+	text-indent:-2ch;
+	padding-left:2ch;
+	display:block;
+}
+#content div:not(.jumpbox) > ul li:before {
+	content: "\2666";
+	padding-right:1ch;
+	color:#0a0;
+}
+.bgdarker {
+	background-color:#0c0c0c;
+}
+.fgdarker {
+	color:#555;
+}
+#amstradascii {
+	font-family:Amstrad2Y, monospace;
+	font-size:16px;
+	line-height:16px;
+	text-shadow: 6px 6px 0 #000;
+	margin-left: auto;
+	margin-right: auto;
+	width:640px;
+}
+#ansi {
+	width:784px;
+	height:424px;
+	background: url(../images/text_mode_lives%21.png) no-repeat scroll -8px -16px;
+	margin:0 auto;
+}
