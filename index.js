@@ -24,7 +24,7 @@ for( let x = 0; x < columns; x++ ) {
 
 
 const draw = () => {
-	context.fillStyle = 'rgba(0, 0, 0, 0.07)';
+	context.fillStyle = 'hsl(' + 360 * Math.random() + ', 100%, 50%)';
 	context.fillRect(0, 0, canvas.width, canvas.height);
 	
 	context.fillStyle = '#9400d3';
@@ -43,3 +43,7 @@ const draw = () => {
 };
 
 setInterval(draw, 45);
+
+/*context.fillStyle = 'hsl(' + 360 * Math.random() + ', 100%, 50%)';*/
+
+/*context.fillStyle = '#9400d3';*/
