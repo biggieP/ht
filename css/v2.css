@@ -170,18 +170,8 @@ body.xform {
 	margin:auto;
 	height:300px;
 }
-/*background*/
-@-webkit-keyframes whizz {50% {background-position: 555px 0;}}
-@-moz-keyframes whizz    {50% {background-position: 555px 0;}}
-@-o-keyframes whizz      {50% {background-position: 555px 0;}}
-@keyframes whizz         {50% {background-position: 555px 0;}}
-body.mainsite {
-	background: black url(../images/logo_checkers.png) repeat scroll 0 0;
-	-webkit-animation: whizz 3.5s infinite ease-in-out forwards;
-	-moz-animation: whizz 3.5s infinite ease-in-out forwards;
-	-o-animation: whizz 3.5s infinite ease-in-out forwards;
-	animation: whizz 3.5s infinite ease-in-out forwards;
-}
+/*removed checkered background*/
+
 /*removed rasterbars*/
 
 /*removed fonts menu*/
