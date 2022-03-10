@@ -108,6 +108,11 @@ body {
 	line-height:100%;
 	color:#aaa;
 }
+#Matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 body.mainsite {
 	background-color:black;
 	background: canvas;
