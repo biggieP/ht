@@ -113,6 +113,12 @@ body.mainsite {
 	font-size:25px;
 	overflow:hidden;
 }
+body.mainsite2 {
+	background-image: url("images/bg1.gif");
+	font-family:oldlondon, monospace;
+	font-size:25px;
+	overflow:hidden;
+}
 body.xform {
   overflow-y:scroll;
   margin:0;
