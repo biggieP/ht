@@ -123,11 +123,15 @@ body.xform {
 	padding: 6px 0;
 }
 #menuleft {
+	font-family:BigBlueTerm, monospace;
+	font-size:25px;
 	float:left;
 	text-align:left;
 	letter-spacing:8px;
 }
 #menuright {
+	font-family:BigBlueTerm, monospace;
+	font-size:25px;
 	float:right;
 	text-align:right;
 }
