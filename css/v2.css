@@ -10,8 +10,8 @@
   src: url(../webfonts/FantasqueSansMonoBold.html); /* IE 9 Compatibility Mode 
   src: url(../webfonts/FantasqueSansMonoRegular.ttf) format('truetype'); /* Safari, Android, iOS 
   font-weight: normal;
-  font-style: normal; */
-}
+  font-style: normal; 
+}*/
 @font-face {
     font-family: 'BigBlueTerm';
     src: url(../webfonts/bigblue_term.eot);
