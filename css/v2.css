@@ -79,7 +79,7 @@ body {
 	color:#aaa;
 }
 body.mainsite {
-	font-family:BigBlueTerm, monospace;
+	font-family:arial, monospace;
 	font-size:12px;
 	overflow:hidden;
 }
