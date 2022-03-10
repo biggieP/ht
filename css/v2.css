@@ -1,14 +1,14 @@
-@font-face {
+/*@font-face {
   font-family: 'FantasqueSansMonoBold';
-  src: url(../webfonts/FantasqueSansMonoBold.html); /* IE 9 Compatibility Mode */
-  src: url(../webfonts/FantasqueSansMonoBold.ttf) format('truetype'); /* Safari, Android, iOS */
+  src: url(../webfonts/FantasqueSansMonoBold.html); /* IE 9 Compatibility Mode 
+  src: url(../webfonts/FantasqueSansMonoBold.ttf) format('truetype'); /* Safari, Android, iOS 
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'FantasqueSansMonoRegular';
-  src: url(../webfonts/FantasqueSansMonoBold.html); /* IE 9 Compatibility Mode */
-  src: url(../webfonts/FantasqueSansMonoRegular.ttf) format('truetype'); /* Safari, Android, iOS */
+  src: url(../webfonts/FantasqueSansMonoBold.html); /* IE 9 Compatibility Mode 
+  src: url(../webfonts/FantasqueSansMonoRegular.ttf) format('truetype'); /* Safari, Android, iOS 
   font-weight: normal;
   font-style: normal;
 }
@@ -70,8 +70,8 @@
        url(../webfonts/amstradpc1512-2y.woff) format('woff'),
        url(../webfonts/amstradpc1512-2y.ttf) format('truetype');
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; 
+} */
 body {
 	text-align:center;
 	background-color:black;
