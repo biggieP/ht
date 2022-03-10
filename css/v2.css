@@ -108,11 +108,6 @@ body {
 	line-height:100%;
 	color:#aaa;
 }
-#Matrix {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 body.mainsite {
 	background-color:black;
 	background: canvas;
@@ -120,6 +115,11 @@ body.mainsite {
 	font-family:oldlondon, monospace;
 	font-size:25px;
 	overflow:hidden;
+}
+#Matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 body.mainsite2 {
 	background-color:black;
