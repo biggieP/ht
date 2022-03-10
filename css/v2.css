@@ -136,7 +136,7 @@ body.xform {
 }
 #menu {
 	color:#0aa;
-	background-color:#333;
+	background-color:transparent;
 	padding: 6px 0;
 }
 #menuleft {
