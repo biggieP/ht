@@ -110,6 +110,8 @@ body {
 }
 body.mainsite {
 	background-color:black;
+	background: canvas;
+	background-size: cover;
 	font-family:oldlondon, monospace;
 	font-size:25px;
 	overflow:hidden;
