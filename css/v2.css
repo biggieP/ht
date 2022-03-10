@@ -115,7 +115,7 @@ body.mainsite {
 	overflow:hidden;
 }
 body.mainsite2 {
-	background-image: url("images/bg1.gif");
+	background-image: images/bg1.gif;
 	font-family:oldlondon, monospace;
 	font-size:25px;
 	overflow:hidden;
