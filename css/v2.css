@@ -138,7 +138,7 @@ body.xform {
 	color:#0aa;
 	background-color:transparent;
 	padding: 6px 0;
-	z-index: 10;
+	z-index: 1;
 }
 #menuleft {
 	font-family:BigBlueTerm, monospace;
@@ -146,22 +146,26 @@ body.xform {
 	float:left;
 	text-align:left;
 	letter-spacing:8px;
+	z-index: 1;
 }
 #menuright {
 	font-family:BigBlueTerm, monospace;
 	font-size:12px;
 	float:right;
 	text-align:right;
+	z-index: 1;
 }
 #menuleft, #menuright {padding:6px 12px; width:160px}
 #menu ul {
 	margin: 0; padding: 0;
 	display:inline-block;
+	z-index: 1;
 }
 #menu ul li {
 	display:inline-block;
 	list-style-type: none;
 	margin: 0; padding: 0;
+	z-index: 1;
 }
 #menu ul li a, #menu ul li a:link, #menu ul li a:visited {
 	display:block;
@@ -169,15 +173,18 @@ body.xform {
 	color:#aaa;
 	padding: 6px 8px;
 	margin: 0 4px;
+	z-index: 1;
 }
 #menu ul li a:active, #menu ul li a:hover{
 	color:#5ff;
 	background-color: #555;
+	z-index: 1;
 }
 #menu ul li a:focus {
 	color:#5f5;
 	background-color:#555;
 	outline:none;
+	z-index: 1;
 }
 
 #menu ul li a:before {content:"["}
